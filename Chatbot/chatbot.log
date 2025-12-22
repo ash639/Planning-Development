@@ -1,0 +1,80 @@
+2025-12-22 04:28:14,979 - INFO - === Bihar Gov Chatbot Backend Started (Ollama qwen3:4b) ===
+2025-12-22 04:28:15,010 - INFO - Loaded metadata for 7 table(s)
+2025-12-22 04:29:04,493 - INFO - === Bihar Gov Chatbot Backend Started (Ollama qwen3:4b) ===
+2025-12-22 04:29:04,494 - INFO - Loaded metadata for 7 table(s)
+2025-12-22 04:29:19,833 - INFO - === Bihar Gov Chatbot Backend Started (Ollama qwen3:4b) ===
+2025-12-22 04:29:19,834 - INFO - Loaded metadata for 7 table(s)
+2025-12-22 05:49:36,590 - INFO - === Bihar Gov Chatbot Backend Started (Ollama qwen3:4b) ===
+2025-12-22 05:49:36,602 - INFO - Loaded metadata for 7 table(s)
+2025-12-22 05:50:18,441 - ERROR - Schema error animal_tourists_revenue_report_yearwise: 2017 (HY000): Can't open named pipe to host: .  pipe: MySQL (2)
+2025-12-22 05:53:49,075 - INFO - === Bihar Gov Chatbot Backend Started (Ollama qwen3:4b) ===
+2025-12-22 05:53:49,076 - INFO - Loaded metadata for 7 table(s)
+2025-12-22 07:09:01,349 - INFO - === Bihar Gov Chatbot Backend Started (Ollama qwen3:4b) ===
+2025-12-22 07:09:01,368 - INFO - Loaded metadata for 7 table(s)
+2025-12-22 07:09:07,129 - ERROR - Schema error animal_tourists_revenue_report_yearwise: 2017 (HY000): Can't open named pipe to host: .  pipe: MySQL (2)
+2025-12-22 07:18:37,044 - INFO - === Bihar Gov Chatbot Backend Started (Ollama qwen3:4b) ===
+2025-12-22 07:18:37,045 - INFO - Loaded metadata for 7 table(s)
+2025-12-22 07:18:40,752 - INFO - package: mysql.connector.plugins
+2025-12-22 07:18:40,752 - INFO - plugin_name: caching_sha2_password
+2025-12-22 07:18:40,753 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2025-12-22 07:18:40,755 - INFO - package: mysql.connector.plugins
+2025-12-22 07:18:40,755 - INFO - plugin_name: sha256_password
+2025-12-22 07:18:40,760 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLSHA256PasswordAuthPlugin
+2025-12-22 07:18:40,765 - ERROR - Schema error animal_tourists_revenue_report_yearwise: 1045 (28000): Access denied for user ''@'localhost' (using password: NO)
+2025-12-22 07:20:15,383 - INFO - === Bihar Gov Chatbot Backend Started (Ollama qwen3:4b) ===
+2025-12-22 07:20:15,384 - INFO - Loaded metadata for 7 table(s)
+2025-12-22 07:20:18,763 - INFO - package: mysql.connector.plugins
+2025-12-22 07:20:18,763 - INFO - plugin_name: caching_sha2_password
+2025-12-22 07:20:18,763 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2025-12-22 07:20:18,765 - INFO - package: mysql.connector.plugins
+2025-12-22 07:20:18,765 - INFO - plugin_name: sha256_password
+2025-12-22 07:20:18,766 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLSHA256PasswordAuthPlugin
+2025-12-22 07:20:18,769 - ERROR - Schema error animal_tourists_revenue_report_yearwise: 1045 (28000): Access denied for user ''@'localhost' (using password: NO)
+2025-12-22 07:29:49,192 - INFO - === Bihar Gov Chatbot Backend Started (Ollama qwen3:4b) ===
+2025-12-22 07:29:49,193 - INFO - Loaded metadata for 7 table(s)
+2025-12-22 07:30:03,353 - INFO - package: mysql.connector.plugins
+2025-12-22 07:30:03,353 - INFO - plugin_name: caching_sha2_password
+2025-12-22 07:30:03,354 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2025-12-22 07:30:03,355 - INFO - package: mysql.connector.plugins
+2025-12-22 07:30:03,355 - INFO - plugin_name: sha256_password
+2025-12-22 07:30:03,357 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLSHA256PasswordAuthPlugin
+2025-12-22 07:30:03,360 - ERROR - Schema error animal_tourists_revenue_report_yearwise: 1045 (28000): Access denied for user ''@'localhost' (using password: NO)
+2025-12-22 10:19:54,184 - INFO - === Bihar Gov Chatbot Backend Started (Ollama qwen3:4b) ===
+2025-12-22 10:19:54,198 - INFO - Loaded metadata for 7 table(s)
+2025-12-22 10:20:20,484 - INFO - package: mysql.connector.plugins
+2025-12-22 10:20:20,484 - INFO - plugin_name: caching_sha2_password
+2025-12-22 10:20:20,484 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2025-12-22 10:20:20,490 - ERROR - Schema error bihar_forest_cover_geospatial_analysis_district_wise: 1045 (28000): Access denied for user ''@'localhost' (using password: NO)
+2025-12-22 10:20:46,010 - ERROR - Schema error animal_tourists_revenue_report_yearwise: 1045 (28000): Access denied for user ''@'localhost' (using password: NO)
+2025-12-22 10:23:50,219 - INFO - === Bihar Gov Chatbot Backend Started (Ollama qwen3:4b) ===
+2025-12-22 10:23:50,221 - INFO - Loaded metadata for 7 table(s)
+2025-12-22 10:24:08,381 - INFO - package: mysql.connector.plugins
+2025-12-22 10:24:08,381 - INFO - plugin_name: caching_sha2_password
+2025-12-22 10:24:08,382 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2025-12-22 10:24:08,384 - ERROR - Schema error animal_tourists_revenue_report_yearwise: 1045 (28000): Access denied for user ''@'localhost' (using password: NO)
+2025-12-22 10:30:36,286 - ERROR - Schema error animal_tourists_revenue_report_yearwise: 1045 (28000): Access denied for user ''@'localhost' (using password: NO)
+2025-12-22 10:34:15,070 - INFO - === Chatbot Backend Started ===
+2025-12-22 10:34:15,099 - INFO - Loaded metadata for 7 table(s)
+2025-12-22 10:34:32,678 - INFO - package: mysql.connector.plugins
+2025-12-22 10:34:32,679 - INFO - plugin_name: caching_sha2_password
+2025-12-22 10:34:32,679 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2025-12-22 10:34:32,692 - ERROR - Schema error for table animal_tourists_revenue_report_yearwise: 1146 (42S02): Table 'dataset.animal_tourists_revenue_report_yearwise' doesn't exist
+2025-12-22 10:36:18,727 - INFO - === Chatbot Backend Started ===
+2025-12-22 10:36:18,728 - INFO - Loaded metadata for 7 table(s)
+2025-12-22 10:36:33,705 - INFO - package: mysql.connector.plugins
+2025-12-22 10:36:33,706 - INFO - plugin_name: caching_sha2_password
+2025-12-22 10:36:33,706 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2025-12-22 10:36:33,709 - ERROR - Schema error for table animal_tourists_revenue_report_yearwise: 1146 (42S02): Table 'dataset.animal_tourists_revenue_report_yearwise' doesn't exist
+2025-12-22 10:40:52,827 - INFO - === Chatbot Backend Started ===
+2025-12-22 10:40:52,828 - INFO - Loaded metadata for 7 table(s)
+2025-12-22 10:41:09,789 - INFO - package: mysql.connector.plugins
+2025-12-22 10:41:09,790 - INFO - plugin_name: caching_sha2_password
+2025-12-22 10:41:09,790 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2025-12-22 10:41:31,275 - INFO - === Chatbot Backend Started ===
+2025-12-22 10:41:31,276 - INFO - Loaded metadata for 7 table(s)
+2025-12-22 10:49:09,307 - INFO - === Chatbot Backend Started ===
+2025-12-22 10:49:09,319 - INFO - Loaded metadata for 7 table(s)
+2025-12-22 10:49:33,274 - INFO - package: mysql.connector.plugins
+2025-12-22 10:49:33,274 - INFO - plugin_name: caching_sha2_password
+2025-12-22 10:49:33,275 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2025-12-22 10:49:33,524 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 404 Not Found"

@@ -1,0 +1,66 @@
+[
+  {
+    "table_name": "animal_tourists_revenue_report_yearwise",
+    "description": "The animal_tourists_revenue_report_yearwise table provides year-wise data on animal collections, tourist visits, and revenue generated at major zoos in Bihar, specifically Patna Zoo and Rajgir Zoo Safari. It includes breakdowns of the number of mammals, birds, and reptiles, along with total animals, number of tourists visited, and revenue earned in rupees.",
+    "department": "Environment, Forest & Climate Change Department",
+    "sector": "Wildlife and Tourism",
+    "time_period": "2022-23 to 2024-25",
+    "measurements": "number of animals by category, total animals, number of tourists, revenue in rupees",
+    "source": "Environment, Forest & Climate Change Department, Government of Bihar"
+  },
+  {
+    "table_name": "bihar_forest_cover_geospatial_analysis_district_wise",
+    "description": "The bihar_forest_cover_geospatial_analysis_district_wise table provides district-wise geospatial analysis of forest cover in Bihar for 2023. It details the area under very dense forest, moderately dense forest, open forest, total forest cover in square kilometers, percentage of district geographical area under forest, change in forest cover percentage with respect to 2021, and scrub area.",
+    "department": "Environment, Forest & Climate Change Department",
+    "sector": "Forestry and Environment",
+    "time_period": "2023",
+    "measurements": "forest area in sq km (very dense, moderately dense, open, total), percentage of geographical area, change in percentage wrt 2021, scrub in sq km",
+    "source": "Environment, Forest & Climate Change Department, Government of Bihar"
+  },
+  {
+    "table_name": "bihar_forest_cover_with_respect_to_national_forest_cover",
+    "description": "The bihar_forest_cover_with_respect_to_national_forest_cover table provides a comparative overview of forest cover in Bihar against the national level in India for 2023. It details areas in square kilometers for categories such as Very Dense Forest, Moderately Dense Forest, Open Forest, Total Forest Cover, and Scrub.",
+    "department": "Environment, Forest & Climate Change Department",
+    "sector": "Forestry and Environment",
+    "time_period": "2023",
+    "measurements": "area in sq km at Bihar level and India level",
+    "source": "Environment, Forest & Climate Change Department, Government of Bihar"
+  },
+  {
+    "table_name": "forest_area_report_district_wise",
+    "description": "The forest_area_report_district_wise table contains district-level information on the extent of forest area in Bihar, measured in hectares. It includes the name of each district, the corresponding forest area, and the year of reporting.",
+    "department": "Environment, Forest & Climate Change Department",
+    "sector": "Forestry and Environment",
+    "time_period": "Varies by year",
+    "measurements": "forest area in hectares",
+    "source": "Environment, Forest & Climate Change Department, Government of Bihar"
+  },
+  {
+    "table_name": "nursery_report_district_wise",
+    "description": "The nursery_report_district_wise table contains district-level information on plant nurseries across Bihar. It includes the region and district names, the total number of nurseries, the total number of plants available in those nurseries, and the reporting year.",
+    "department": "Environment, Forest & Climate Change Department",
+    "sector": "Forestry and Environment",
+    "time_period": "Varies by year",
+    "measurements": "total number of nurseries, total number of available plants",
+    "source": "Environment, Forest & Climate Change Department, Government of Bihar"
+  },
+  {
+    "table_name": "rfa_report_state_wise",
+    "description": "The rfa_report_state_wise table contains state-level information on Recorded Forest Area (RFA) in India. It includes the geographical area of each state, areas under reserved forest, protected forest, and unclassed forest in square kilometers, total recorded forest area, percentage of geographical area under RFA, and the reporting year.",
+    "department": "Environment, Forest & Climate Change Department",
+    "sector": "Forestry and Environment",
+    "time_period": "Varies by year",
+    "measurements": "area in sq km (geographical, reserved forest, protected forest, unclassed forest, total RFA), percentage of geographical area",
+    "source": "Environment, Forest & Climate Change Department, Government of Bihar"
+  },
+  {
+"table_name": "vriksharopan_karya_report_year_wise",
+"description": "The vriksharopan_karya_report_year_wise table contains year-wise data on plantation activities under the Vriksharopan Karya (tree plantation program) across different forest circles. It includes the number of completed plantations, innovative and completed plantations, total plantations, advance work plantations, along with the reporting year and focus area.",
+"department": "Environment, Forest & Climate Change Department",
+"sector": "Forestry and Environment",
+"time_period": "Varies by year",
+"measurements": "number of plantations (completed, innovative and completed, total, advance work)",
+"source": "Environment, Forest & Climate Change Department, Government of Bihar"
+}
+
+]
