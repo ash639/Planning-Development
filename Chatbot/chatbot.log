@@ -78,3 +78,9 @@
 2025-12-22 10:49:33,274 - INFO - plugin_name: caching_sha2_password
 2025-12-22 10:49:33,275 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
 2025-12-22 10:49:33,524 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 404 Not Found"
+2025-12-22 10:57:53,067 - INFO - === Chatbot Backend Started ===
+2025-12-22 10:57:53,068 - INFO - Loaded metadata for 7 table(s)
+2025-12-22 10:58:15,949 - INFO - package: mysql.connector.plugins
+2025-12-22 10:58:15,950 - INFO - plugin_name: caching_sha2_password
+2025-12-22 10:58:15,950 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2025-12-22 10:58:16,244 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 404 Not Found"
