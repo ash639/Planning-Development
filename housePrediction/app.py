@@ -34,7 +34,7 @@ total_bsmt_sf = st.number_input("Total Basement SF", 0, 5000, 800)
 neighborhood = st.selectbox(
     "Neighborhood",
     [
-        "NAmes", "CollgCr", "OldTown", "Edwards", "Somerst",
+        "Names", "CollgCr", "OldTown", "Edwards", "Somerst",
         "NridgHt", "Gilbert", "Sawyer", "NWAmes", "SawyerW"
     ]
 )
