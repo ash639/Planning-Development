@@ -1,0 +1,1 @@
+station_numbeer,zone_code,zone_name,district_code,district_name,block_code,block_name,panchayat_code,panchayat_name,location,longitude,latitude,station_type,agency,installed_position,date_of_comm,is_problematic,station_premises_on,vendor_engineer_name,User_ID,station_premises_condition,last_visited_date

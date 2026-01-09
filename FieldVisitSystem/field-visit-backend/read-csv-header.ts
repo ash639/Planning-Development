@@ -1,0 +1,10 @@
+import * as fs from 'fs';
+const content = fs.readFileSync('d:\\Project\\FieldVisitSystem\\field-visit-app\\assets\\BMSKnew.csv', 'utf8');
+const lines = content.split('\n');
+const headers = lines[0].split(',');
+let out = '--- HEADERS ---\n';
+headers.forEach((h, i) => out += `${i}: ${h.trim()}\n`);
+out += '--- DATA ROW 1 ---\n';
+const row1 = lines[1].split(',');
+row1.forEach((r, i) => out += `${i}: ${r.trim()}\n`);
+fs.writeFileSync('csv_info.txt', out);

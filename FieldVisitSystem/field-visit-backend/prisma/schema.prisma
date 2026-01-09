@@ -1,0 +1,135 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = "file:./dev.db"
+}
+
+// Enums removed for SQLite compatibility
+// Role: SUPER_ADMIN, ADMIN, AGENT
+// VisitStatus: SCHEDULED, IN_PROGRESS, COMPLETED, REJECTED
+
+
+model Organization {
+  id        String   @id @default(uuid())
+  name      String
+  status    String   @default("ACTIVE") // ACTIVE, SUSPENDED, ARCHIVED
+  plan      String   @default("FREE")   // FREE, PRO, ENTERPRISE
+  settings  String?  // JSON: { gps: bool, offline: bool }
+  subscriptionEndsAt DateTime?
+  
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  
+  users     User[]
+  locations Location[]
+  visits    Visit[]
+  reports   Report[]
+}
+
+model User {
+  id              String   @id @default(uuid())
+  email           String   @unique
+  passwordHash    String
+  name            String
+  role            String   // Enum: Role
+  organizationId  String?
+  organization    Organization? @relation(fields: [organizationId], references: [id])
+  
+  isActive        Boolean  @default(true)
+  lastLoginAt     DateTime?
+  lastKnownLocation String? // JSON: { lat, long }
+  
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+
+  // Relations
+  assignedVisits  Visit[]  @relation("AssignedAgent")
+  auditLogs       AuditLog[]
+  reports         Report[]
+  locations       Location[]
+}
+
+model Location {
+  id              String   @id @default(uuid())
+  name            String
+  stationNumber   String?   // BMSK Station ID
+  latitude        Float
+  longitude       Float
+  address         String?
+  district        String?
+  block           String?
+  stationType     String?
+  lastVisited     DateTime?
+  isProblematic   Boolean   @default(false)
+  priority        String    @default("NORMAL") // NORMAL, HIGH, CRITICAL
+  organizationId  String
+  organization    Organization @relation(fields: [organizationId], references: [id])
+  assignedAgentId String?
+  assignedAgent   User?    @relation(fields: [assignedAgentId], references: [id], onDelete: SetNull)
+  
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+  
+  visits          Visit[]
+}
+
+model Visit {
+  id              String      @id @default(uuid())
+  organizationId  String
+  organization    Organization @relation(fields: [organizationId], references: [id])
+  locationId      String
+  location        Location    @relation(fields: [locationId], references: [id])
+  agentId         String?
+  agent           User?       @relation("AssignedAgent", fields: [agentId], references: [id], onDelete: SetNull)
+  
+  status          String      @default("SCHEDULED") // Enum: VisitStatus
+  scheduledDate   DateTime
+  checkInTime     DateTime?
+  checkOutTime    DateTime?
+  
+  notes           String?
+  mediaUrls       String?
+  reportData      String?     @default("{}") // Store structured JSON: battery, signal, sensors etc.
+  
+  checkInLat      Float?
+  checkInLng      Float?
+  checkOutLat     Float?
+  checkOutLng     Float?
+  travelDistance  Float?      // Distance between check-in and check-out in km
+  
+  createdAt       DateTime    @default(now())
+  updatedAt       DateTime    @updatedAt
+}
+
+model AuditLog {
+  id        String   @id @default(uuid())
+  userId    String?
+  user      User?    @relation(fields: [userId], references: [id], onDelete: SetNull)
+  action    String
+  details   String?
+  organizationId String?
+  createdAt DateTime @default(now())
+}
+
+model Report {
+  id             String   @id @default(uuid())
+  title          String
+  content        String
+  type           String   // e.g., "VISIT_REPORT", "INCIDENT", "GENERAL"
+  status         String   @default("SUBMITTED")
+  
+  authorId       String
+  author         User     @relation(fields: [authorId], references: [id])
+  
+  organizationId String
+  organization   Organization @relation(fields: [organizationId], references: [id])
+  
+  createdAt      DateTime @default(now())
+}
+

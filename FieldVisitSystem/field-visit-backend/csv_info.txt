@@ -1,0 +1,46 @@
+--- HEADERS ---
+0: station_numbeer
+1: zone_code
+2: zone_name
+3: district_code
+4: district_name
+5: block_code
+6: block_name
+7: panchayat_code
+8: panchayat_name
+9: location
+10: longitude
+11: latitude
+12: station_type
+13: agency
+14: installed_position
+15: date_of_comm
+16: is_problematic
+17: station_premises_on
+18: vendor_engineer_name
+19: User_ID
+20: station_premises_condition
+21: last_visited_date
+--- DATA ROW 1 ---
+0: 61110001
+1: 56
+2: North West
+3: 11
+4: West Champaran
+5: 110001
+6: Bagha-II
+7: 
+8: 
+9: Bagha-II
+10: 84.058
+11: 27.135
+12: AWS
+13: Obel
+14: On Ground
+15: 
+16: 
+17: Government Land
+18: MANISH YADAV
+19: 16
+20: No-Issue
+21: 09-01-2024

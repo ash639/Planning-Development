@@ -1,0 +1,5 @@
+admin@example.com:password123:SUPER_ADMIN
+super@example.com:password123:SUPER_ADMIN
+one@example.com:password123:ADMIN
+two@example.com:password123:AGENT
+agent@example.com:password123:AGENT
