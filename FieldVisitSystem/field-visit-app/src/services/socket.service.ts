@@ -2,7 +2,7 @@ import { io, Socket } from 'socket.io-client';
 import * as Location from 'expo-location';
 import { useAuthStore } from '../store/auth.store';
 
-const SOCKET_URL = 'http://localhost:3000';
+const SOCKET_URL = process.env.EXPO_PUBLIC_API_URL || 'http://localhost:3000';
 
 class SocketService {
     private socket: Socket | null = null;

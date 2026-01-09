@@ -105,3 +105,45 @@ The interconnected system consists of three main components:
 
 ## 7. Conclusion
 The Field Visit System is a scalable and secure platform that modernizes field operations. By enforcing digital verification and providing real-time insights, organizations can significantly improve the productivity of their field workforce and the reliability of their data.
+
+---
+
+## 8. Deployment Strategy
+
+The system is designed for containerized deployment using **Docker**, ensuring consistency across development and production environments.
+
+### Docker Architecture
+The project is containerized into two distinct services managed by `docker-compose`:
+
+1.  **Backend Container (`field_visit_backend`)**:
+    *   Built on `node:20-alpine`.
+    *   Auto-generates Prisma client and builds TypeScript source.
+    *   Exposes the API on port 3000.
+    *   Persistent storage for the SQLite database (or connection to external Postgres).
+
+2.  **Frontend Container (`field_visit_frontend`)**:
+    *   Multi-stage build process.
+    *   **Stage 1**: Builds the React Native/Expo web bundle using `npx expo export -p web`.
+    *   **Stage 2**: Serves the static assets using a high-performance **Nginx** server.
+    *   Includes custom Nginx configuration to handle Single Page Application (SPA) routing.
+
+### Production Verification
+To deploy to a live server, the system uses build-time arguments to inject the API URL.
+
+**Configuration (`docker-compose.yml`)**:
+To move from local testing to a production server, only the `EXPO_PUBLIC_API_URL` arg needs to be updated:
+
+```yaml
+frontend:
+  build:
+    context: ./field-visit-app
+    args:
+      # Update this to the Public IP or Domain of the server
+      - EXPO_PUBLIC_API_URL=http://YOUR_SERVER_IP:3000
+```
+
+**Deployment Command**:
+```bash
+docker-compose up --build -d
+```
+The `--build` flag is critical to ensure the frontend static assets are regenerated with the correct production API endpoints.

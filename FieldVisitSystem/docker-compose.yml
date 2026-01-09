@@ -1,0 +1,28 @@
+version: '3.8'
+
+services:
+  backend:
+    build: ./field-visit-backend
+    container_name: field_visit_backend
+    restart: always
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./field-visit-backend/prisma/dev.db:/app/prisma/dev.db
+    environment:
+      - PORT=3000
+      - DATABASE_URL=file:./dev.db
+      - JWT_SECRET=supersecret_production_key_change_me
+
+  frontend:
+    build:
+      context: ./field-visit-app
+      args:
+        # IMPORTANT: Replace this with your actual server IP or Domain name
+        - EXPO_PUBLIC_API_URL=http://localhost:3000
+    container_name: field_visit_frontend
+    restart: always
+    ports:
+      - "80:80"
+    depends_on:
+      - backend
